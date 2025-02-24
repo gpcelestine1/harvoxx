@@ -16,9 +16,21 @@ body{
     display: grid;
 }
 
-section{
+section, footer{
     padding: 5% 10%;
 }
+
+.SectionTitle{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 70px;
+    color: #213B52;
+}
+
+.txt-center{
+    text-align: center;
+}
+
 .mainheader{
     padding: 20px 10% 4% 10%;
     background-color: #213C53;
@@ -147,9 +159,6 @@ section{
     background-color: #f0f3f5;
     text-align: center;
 }
-.services h1{
-    margin-bottom: 40px;
-}
 .services .grid-container{
     grid-template-columns: 523px 523px;
     grid-template-rows: 550px 550px 550px;
@@ -193,12 +202,77 @@ section{
     height: 225px;
 }
 
-.pricing h1{
-    text-align: center;
-    font-size: xx-large;
-    margin-bottom: 70px;
-    color: #213B52;
-}
 .pricing-img img{
     width: 100%;
+}
+
+#contact{
+    background-color: #f0f3f5;
+}
+#contact .grid-container{
+    grid-template-columns: 535px 535px;
+    grid-template-rows: 430px;
+    justify-content: space-between;
+}
+.ContactLeft{
+    display: grid;
+    grid-template-columns: 245px 245px;
+    grid-template-rows: 200px 200px;
+    gap: 25px;
+}
+.ContactBox{
+    grid-column: 1 / 3;
+}
+.ContactLeft h1{
+    margin-bottom: 20px;
+}
+.ContactItem{
+    padding: 30px;
+    background-color: white;
+}
+.ContactItem a{
+    text-decoration: none;
+    color: #213C53;
+}
+.ContactRight{
+    height: 370px;
+    background-color: white;
+    padding: 30px;
+}
+.form-row{
+    /* border: 2px green dotted; */
+    justify-content: space-between;
+}
+.half{
+    width: 233px;
+}
+.full{
+    width: 100%;
+}
+input{
+    margin-bottom: 18px;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+}
+textarea{
+    padding: 15px;
+    outline: none;
+}
+#submit{
+    display: block;
+    margin: 10px auto;
+    width: 130px;
+    cursor: pointer;
+    background-color: goldenrod;
+    border: none;
+}
+
+footer{
+    background-color: #213C53;
+    color: white;
+    height: 430px;
+}
+#copy{
+    margin-top: 150px;
 }
