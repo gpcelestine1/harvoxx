@@ -229,20 +229,20 @@
             </div>
             <div class="ContactRight">
                 <div class="ContactForm">
-                    <form action="#">
+                    <form action="#" id="contactForm">
                         <div class="form-row container">
                             <div class="form-group">
-                                <input type="text" placeholder="Name" class="half">
+                                <input type="text" id="name" placeholder="Name" class="half">
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Email" class="half">
+                                <input type="email" id="email" placeholder="Email" class="half">
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="" id="" placeholder="Subject" class="full">
+                            <input type="text" name="" id="subject" placeholder="Subject" class="full">
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="" placeholder="Message" class="full" rows="7"></textarea>
+                            <textarea name="message" id="textArea" placeholder="Message" class="full" rows="7"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="" id="submit" value="Send">
@@ -257,17 +257,19 @@
     <footer>
         <div>
             <h1 class="txt-center">Harvoxx Tech. Hub.</h1>
-            <p class="txt-center">
+            <p class="txt-center" id="latest">
                 <i>Get latest latest info's on our Events, trainings and tech presentations. subscribe below</i>
             </p>
         </div>
         <div class="txt-center">
-            <form action="#">
-                <input type="email" name="" id="" placeholder="Enter your email">
-                <input type="submit" value="subscribe">
+            <form action="#" class="" id="footerForm">
+                <input type="email" name="" id="footerEmail" placeholder="Enter your email">
+                <button type="submit" id="footerSubmit">Submit</button>
             </form>
         </div>
         <p id="copy">&copy; Copyright Harvoxx tech. hub. All Rights Reserved</p>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
