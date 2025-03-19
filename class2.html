@@ -6,11 +6,13 @@
     <title>Class 2</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/class2.css">
+    
 </head>
 <body>
     <header class="mainheader">
         <nav class="navbar container">
             <h2 class="hth">HARVOXX <span>TECH HUB</span></h2>
+            
             <div class="navmenudiv container">
                 <ul class="navul container">
                     <li class="navmenu"><a href="#" class="nava active">Home</a></li>
@@ -22,8 +24,29 @@
                     <a class="getstarted" href="#">Get Started</a>
                 </div>
             </div>
+
         </nav>
     </header>
+
+<!-- menu for small screen size -->
+    <section class="mediaNavBox">
+        <span class="menuIcon hidden">
+            <i id="open" class="fa-solid fa-bars menu"></i>
+            <i id="close" class="fa-solid fa-xmark menu"></i>
+        </span>
+        <div id="navListMenu" class="navListDiv">
+            <ul class="navul container">
+                <li class="navmenu"><a href="#" class="nava active">Home</a></li>
+                <li class="navmenu"><a href="" class="nava">About Us</a></li>
+                <li class="navmenu"><a href="#" class="nava">Services</a></li>
+                <li class="navmenu"><a href="#" class="nava">Contact Us</a></li>
+            </ul>
+            <div class="getstarteddiv">
+                <a class="getstarted" href="#">Get Started</a>
+            </div>
+        </div>
+
+    </section>
     <section class="heroparent">
         <div class="hero container">
             <div class="heroleft">
@@ -271,5 +294,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/3b02b89c61.js" crossorigin="anonymous"></script>
 </body>
 </html>

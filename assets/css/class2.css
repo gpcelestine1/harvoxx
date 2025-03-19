@@ -85,6 +85,52 @@ footer {
   background-color: goldenrod;
 }
 
+/* small screen menu */
+.mediaNavBox {
+  display: none;
+  background-color: #213b52;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+}
+
+.menuIcon {
+  font-size: 22px;
+  color: #fec133;
+  display: none;
+}
+
+#close{
+  display: none;
+}
+.navListDiv {
+  display: none;
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  height: 90vh;
+  margin: 10px 0 0 0;
+}
+
+.navListDiv .navul {
+  padding: 10px;
+}
+
+.getstarteddiv a {
+  background-color: #213b52;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: none;
+}
+
+.navUlDiv ul {
+  flex-direction: column;
+}
+
+/* hero section */
 .heroparent {
   background-color: #213c53;
   padding: 0 10% 15% 10%;
@@ -276,10 +322,11 @@ footer {
   background-color: #213c53;
   color: white;
   height: 430px;
-  background-image: linear-gradient(rgba(10, 16, 43, 0.9), rgba(8, 1, 51, 0.9)), url("../images/footer-bg.jpg");
+  background-image: linear-gradient(rgba(10, 16, 43, 0.9), rgba(8, 1, 51, 0.9)),
+    url("../images/footer-bg.jpg");
 }
 #copy {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 footer #latest {
@@ -316,10 +363,31 @@ footer #footerSubmit {
     background-color: goldenrod;
   }
 
+  p{
+    font-size: 14px;
+  }
+
   .mainheader {
     display: none;
   }
 
+  /* media querry small screen menu */
+  .mediaNavBox {
+    display: block;
+  }
+  .menuIcon {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navul {
+    flex-direction: column;
+  }
+  .active {
+    color: #fec133;
+  }
+
+  /* media querry for hero section */
   .heroparent .hero {
     flex-direction: column-reverse;
   }
@@ -342,6 +410,7 @@ footer #footerSubmit {
     margin: auto auto;
   }
 
+  /* about section */
   .about {
     flex-direction: column;
     padding: 0;
@@ -352,7 +421,7 @@ footer #footerSubmit {
   }
 
   .about .grid-container {
-    grid-template-columns: 400px;
+    grid-template-columns: 100%;
     grid-template-rows: 110px 110px;
   }
 
@@ -371,55 +440,53 @@ footer #footerSubmit {
 
   .card-body {
     width: 85%;
-    height: 250px;
+    height: 280px;
   }
 
-  .pricing{
-    padding: 50px 10px 50px 10px;
+  .pricing {
+    padding: 20px 0;
   }
 
-#contact{
+  #contact {
     padding: 10px;
-} 
+  }
 
-#contact .grid-container {
-  grid-template-columns: 100%;
-  grid-template-rows: 430px;
-}
+  #contact .grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 430px;
+  }
 
-.ContactLeft {
-  display: grid;
-  grid-template-columns: 245px;
-  grid-template-rows: 200px 200px 200px;
-}
+  .ContactLeft {
+    display: grid;
+    grid-template-columns: 245px;
+    grid-template-rows: 200px 200px 200px;
+  }
 
-.ContactItem {
+  .ContactItem {
     grid-column: 1 / 3;
-}
+  }
 
-.ContactRight{
+  .ContactRight {
     margin-top: 250px;
-}
+  }
 
-.form-row{
+  .form-row {
     flex-direction: column;
-}
+  }
 
-#contact{
-  margin-bottom: 50px;
-}
+  #contact {
+    margin-bottom: 50px;
+  }
 
-#contactForm input{
+  #contactForm input {
     width: 100%;
-}
+  }
 
-footer #footerForm{
-  width: 100%;
-}
+  footer #footerForm {
+    width: 100%;
+  }
 
-footer #footerEmail{
-  width: 75%;
-  background-color: ;
-}
-
+  footer #footerEmail {
+    width: 75%;
+  }
 }
